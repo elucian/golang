@@ -13,6 +13,8 @@ func print_menu() {
   fmt.Println("0 = quit ")        
   fmt.Println("1 = Hello World")
   fmt.Println("2 = For loop")  
+  fmt.Println("3 = Random grades")    
+  fmt.Println("4 = Infinite loop")    
   fmt.Println("----------------- ")  
 }
 
@@ -28,7 +30,11 @@ func main() {
     } else if option == 1 {
       demo.Hello()
     } else if option == 2 {
-      demo.For_loop()
+      demo.For_loop()      
+    } else if option == 3 {
+      demo.Random_grades()
+    } else if option == 4 {
+      demo.Infinite_loop()
     } else {
       fmt.Println("invalid option")
       print_menu() 
