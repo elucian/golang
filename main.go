@@ -3,6 +3,7 @@ package main
 import (
   demo   "golang/demo"
   array  "golang/array"
+  maps   "golang/maps"
 )
 
 import (
@@ -21,6 +22,7 @@ func print_menu() {
   fmt.Println("7 = Local scope")   
   fmt.Println("8 = Array Init") 
   fmt.Println("9 = Array Slice") 
+  fmt.Println("10 = Map demo") 
   fmt.Println("----------------- ")  
 }
 
@@ -51,6 +53,8 @@ func main() {
       array.Init()     
     } else if option == 9 {
       array.Slice()           
+    } else if option == 10 {
+      maps.Init()          
     } else {
       fmt.Println("invalid option")
       print_menu() 
