@@ -22,38 +22,39 @@ func print_menu() {
   fmt.Println("7 = Local scope")   
   fmt.Println("8 = Array Init") 
   fmt.Println("9 = Array Slice") 
-  fmt.Println("10 = Map demo") 
+  fmt.Println("A = Map demo") 
   fmt.Println("----------------- ")  
 }
 
 func main() {
-  option := 9
+  option := "_"
   fmt.Println("Run demo: ")
   print_menu() 
-  for ;option>0; {
+  for ;option!="0"; {
     fmt.Print(">>")
-    fmt.Scanf("%d",&option)
-    if option == 0 {
+    fmt.Scanf("%s",&option)
+    fmt.Print(option)
+    if option == "0" {
        break 
-    } else if option == 1 {
+    } else if option == "1" {
       demo.Hello()
-    } else if option == 2 {
+    } else if option == "2" {
       demo.For_loop()      
-    } else if option == 3 {
+    } else if option == "3" {
       demo.Random_grades()
-    } else if option == 4 {
+    } else if option == "4" {
       demo.Infinite_loop()
-    } else if option == 5 {
+    } else if option == "5" {
       demo.Value_switch()
-    } else if option == 6 {
+    } else if option == "6" {
       demo.Cond_switch()     
-    } else if option == 7 {
+    } else if option == "7" {
       demo.Local_scope()            
-    } else if option == 8 {
+    } else if option == "8" {
       array.Init()     
-    } else if option == 9 {
+    } else if option == "9" {
       array.Slice()           
-    } else if option == 10 {
+    } else if option == "A" {
       maps.Init()          
     } else {
       fmt.Println("invalid option")
