@@ -1,7 +1,8 @@
 package main
 
 import (
-  demo "golang/demo"
+  demo   "golang/demo"
+  array  "golang/array"
 )
 
 import (
@@ -14,7 +15,12 @@ func print_menu() {
   fmt.Println("1 = Hello World")
   fmt.Println("2 = For loop")  
   fmt.Println("3 = Random grades")    
-  fmt.Println("4 = Infinite loop")    
+  fmt.Println("4 = Infinite loop")  
+  fmt.Println("5 = Value switch") 
+  fmt.Println("6 = Cond switch")   
+  fmt.Println("7 = Local scope")   
+  fmt.Println("8 = Array Init") 
+  fmt.Println("9 = Array Slice") 
   fmt.Println("----------------- ")  
 }
 
@@ -35,6 +41,16 @@ func main() {
       demo.Random_grades()
     } else if option == 4 {
       demo.Infinite_loop()
+    } else if option == 5 {
+      demo.Value_switch()
+    } else if option == 6 {
+      demo.Cond_switch()     
+    } else if option == 7 {
+      demo.Local_scope()            
+    } else if option == 8 {
+      array.Init()     
+    } else if option == 9 {
+      array.Slice()           
     } else {
       fmt.Println("invalid option")
       print_menu() 
