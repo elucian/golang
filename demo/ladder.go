@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-func Random_grades() {
+func Ladder() {
 	var grade = 'X'
 	var score = 0
 

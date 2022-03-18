@@ -15,7 +15,7 @@ func print_menu() {
   fmt.Println("0 = quit ")        
   fmt.Println("1 = Hello World")
   fmt.Println("2 = For loop")  
-  fmt.Println("3 = Random grades")    
+  fmt.Println("3 = Ladder")    
   fmt.Println("4 = Infinite loop")  
   fmt.Println("5 = Value switch") 
   fmt.Println("6 = Cond switch")   
@@ -33,7 +33,7 @@ func main() {
   for ;option!="0"; {
     fmt.Print(">>")
     fmt.Scanf("%s",&option)
-    fmt.Print(option)
+    // fmt.Print(option)
     if option == "0" {
        break 
     } else if option == "1" {
@@ -41,7 +41,7 @@ func main() {
     } else if option == "2" {
       demo.For_loop()      
     } else if option == "3" {
-      demo.Random_grades()
+      demo.Ladder()
     } else if option == "4" {
       demo.Infinite_loop()
     } else if option == "5" {
